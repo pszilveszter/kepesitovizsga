@@ -19,4 +19,5 @@ public class HeavyCavalry extends MilitaryUnit {
         }
         return attackPoints;
     }
+
 }

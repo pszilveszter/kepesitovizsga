@@ -63,5 +63,4 @@ class AddDigitsTest {
     void test_addDigits_15_5minus55() {
         assertEquals(15, digitAdder.addDigits("5-55"));
     }
-
 }

@@ -34,4 +34,5 @@ public abstract class MilitaryUnit {
     int getHitPoints() {
         return hitPoints;
     }
+
 }

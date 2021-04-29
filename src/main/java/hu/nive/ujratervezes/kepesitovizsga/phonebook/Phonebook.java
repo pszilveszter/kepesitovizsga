@@ -22,6 +22,6 @@ public class Phonebook {
         } catch (IOException ioe) {
             throw new IllegalStateException("Unable to write file");
         }
-
     }
+
 }

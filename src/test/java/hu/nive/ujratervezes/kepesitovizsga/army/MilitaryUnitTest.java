@@ -45,4 +45,5 @@ class MilitaryUnitTest {
         assertEquals(80, swordsman.getHitPoints());
         assertEquals(10, swordsman.doDamage());
     }
+
 }

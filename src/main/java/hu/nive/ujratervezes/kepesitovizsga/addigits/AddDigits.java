@@ -21,4 +21,5 @@ public class AddDigits {
     private boolean isEmptyIn(String s) {
         return s == null || s.isBlank();
     }
+
 }

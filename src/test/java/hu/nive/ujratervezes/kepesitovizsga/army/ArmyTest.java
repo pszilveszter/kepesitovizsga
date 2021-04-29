@@ -59,5 +59,4 @@ class ArmyTest {
         army.damageAll(200);
         assertEquals(0, army.getArmySize());
     }
-
 }
