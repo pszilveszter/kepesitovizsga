@@ -8,9 +8,10 @@ import java.util.Map;
 
 
 public class Phonebook {
+
     public void exportPhonebook(Map<String, String> contacts, String output) {
         if (contacts == null || output == null) {
-            throw new IllegalArgumentException("Missing parameter, unable to continnue");
+            throw new IllegalArgumentException("Missing parameter, unable to continue");
         }
 
         Path file = Path.of(output);
@@ -19,7 +20,7 @@ public class Phonebook {
                 writer.write(entry.getKey() + ": " + entry.getValue() + "\n");
             }
         } catch (IOException ioe) {
-            throw new IllegalStateException("Unable to write given file");
+            throw new IllegalStateException("Unable to write file");
         }
 
     }

@@ -1,5 +1,6 @@
 package hu.nive.ujratervezes.kepesitovizsga.addigits;
 
+
 public class AddDigits {
 
     public int addDigits(String s) {
