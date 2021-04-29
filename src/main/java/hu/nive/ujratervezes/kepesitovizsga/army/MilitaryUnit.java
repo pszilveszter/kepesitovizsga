@@ -3,12 +3,12 @@ package hu.nive.ujratervezes.kepesitovizsga.army;
 public abstract class MilitaryUnit {
 
     protected int attackPoints;
-    protected int vitality;
+    protected int hitPoints;
     private boolean isArmored;
 
-    MilitaryUnit(int attackPoints, int vitality, boolean isArmored) {
+    MilitaryUnit(int attackPoints, int hitPoints, boolean isArmored) {
         this.attackPoints = attackPoints;
-        this.vitality = vitality;
+        this.hitPoints = hitPoints;
         this.isArmored = isArmored;
     }
 
@@ -19,16 +19,16 @@ public abstract class MilitaryUnit {
 
     int sufferDamage(int damage) {
         if (isArmored) {
-            vitality -= damage / 2;
+            hitPoints -= damage / 2;
         }
         else {
-            vitality -= damage;
+            hitPoints -= damage;
         }
-        return vitality;
+        return hitPoints;
     }
 
 
     int getHitPoints() {
-        return vitality;
+        return hitPoints;
     }
 }

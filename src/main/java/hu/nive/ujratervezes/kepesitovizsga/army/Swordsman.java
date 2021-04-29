@@ -13,7 +13,7 @@ public class Swordsman extends MilitaryUnit {
     int sufferDamage(int damage) {
         if (armorState) {
             armorState = false;
-            return vitality;
+            return hitPoints;
         }
         return super.sufferDamage(damage);
     }
